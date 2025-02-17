@@ -7,9 +7,20 @@
     */
 
     //Entrada
-
-
+      //Entrada
+      let word = prompt(`digite UMA palavra`).trim().toLowerCase();
+     let conta = 0
     //Processamento
+     function valida(word) {
+        for (let i = 0; i < word.length; i++) {
+            if(word[i] === "a" ||word[i] === "e" ||word[i] === "i" ||word[i] === "o" ||word[i] === "u")  
+            conta++
+        }
+     }
+      valida(word)
+      alert(`A quantidade de vogais é ${conta}`)
+    //Saída
+
 
 
     //Saída

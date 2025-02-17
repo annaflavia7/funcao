@@ -6,10 +6,15 @@
     */
 
     //Entrada
-
+    let peso = Number(prompt(`Seu peso em KG`).trim());
+    let altura = Number(prompt(`Sua altura em metros`).trim())
 
     //Processamento
-
+    function IMC(peso, altura) {
+        let IMC = peso / (altura * altura)
+        alert(`seu IMC é: ${IMC}`)
+    }
+    IMC(peso, altura)
 
     //Saída
 

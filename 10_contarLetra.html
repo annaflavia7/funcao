@@ -6,10 +6,19 @@
     */
 
     //Entrada
-
-
+    let letra = prompt('uma letra').toLowerCase();
+    let frase = prompt('frase').toLowerCase();
+    let quant = 0
     //Processamento
-
+    function letras(letra, frase) {
+        for (let i = 0; i < frase.length; i++) {
+            if (word[i] === letra)
+                quant++
+        }
+    }
+    letras(letra, frase)
+    alert(`A letra "${letra}" aparace ${quant} vezes na frase`)
+    //Saída
 
     //Saída
 

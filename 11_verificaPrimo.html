@@ -5,9 +5,21 @@
     */
 
     //Entrada
-
+    let num = Number(prompt(`digite um número`).trim())
 
     //Processamento
+    function primo(numero) {
+        let divisivel = 0;
+        for (let i = 1; i <= numero; i++) {
+            if (numero % i == 0) {
+                divisivel++;
+            }
+        }
+        return (divisivel > 2) ? 'Não é primo!' : 'É primo';
+    }
+    let result = primo(num);
+    //Saída
+    alert(result)
 
 
     //Saída

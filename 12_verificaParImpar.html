@@ -5,10 +5,15 @@
     */
 
     //Entrada
-
-
+    let num = Number(prompt(`inisira um número`).trim())
+    
     //Processamento
-
+    function ParImp(num) {
+        if(num%2 == 0) return `é par`
+        else return `é ímpar`
+    }
+    let result = ParImp(num)
+    alert(`${result}`)
 
     //Saída
 
